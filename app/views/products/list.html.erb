@@ -1,0 +1,20 @@
+    <div class="grid">
+      <% @products.each do |product| %>
+
+        <div class="grid-cell">
+          <a href="/products/<%= product.id %>">
+          <%= image_tag "products/#{product.img_name}.jpg" %>
+         </a></br>
+          <h1><%= product.item %></h1>
+          <h2>
+          <% if product.condition == "good" %> <span class="clearance">CLEARANCE!</span>
+            <%= number_to_currency product.price.to_i * 0.9 %>
+           <% elsif product.condition == "average" %> <span class="clearance">CLEARANCE!</span>
+            <%= number_to_currency product.price.to_i * 0.8 %>
+           <% else %>
+            <%= number_to_currency product.price %>
+           <% end %>
+         </h2>
+          <a class="info-button" href="/products/<%= product.id %>">More Info</a>
+        </div>
+  <% end %>

@@ -1,0 +1,24 @@
+<div class="detailcontainer">
+  <div class="detailimage">
+    <%= image_tag "products/#{@product.img_name}.jpg" %>
+  </div>
+  <div class="detaildescription">
+    <h1><%= @product.item %></h1>
+    <h2>Price</h2>
+    <p>
+    <% if @product.condition == "good" %> <span class="clearance">CLEARANCE!</span>
+      <%= number_to_currency @product.price.to_i * 0.9 %>
+    <% elsif @product.condition == "average" %> <span class="clearance">CLEARANCE!</span>
+      <%= number_to_currency @product.price.to_i * 0.8 %>
+    <% else %>
+      <%= number_to_currency @product.price %>
+    <% end %>
+    </p>
+    <h3>Description</h3>
+    <p><%= @product.description%></p>
+    <h3>Dimensions</h3>
+    <p>Width: <%= @product.dimension_w %></p>
+    <p>Length: <%= @product.dimension_l %></p>
+    <p>Height: <%= @product.dimension_h %></p>
+  </div>
+</div>
