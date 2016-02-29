@@ -449,7 +449,7 @@ flex-wrap: wrap; }
 
 .grid-cell a { text-decoration: none; }
 
-.grid-cell h1, h2 { margin-left: 10px;
+.grid-cell h1, .grid-cell h2 { margin-left: 10px;
   margin-right:10px;
   font-family: optima;
   font-weight:lighter; }
