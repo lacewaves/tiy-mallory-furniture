@@ -431,6 +431,42 @@ th {
 
 /* DCD EDITS */
 
+.grid { margin-left: 100px;
+margin-right:100px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap; }
+
+.grid-cell { border-radius: 3px;
+  border: 1px solid #D5D5D5;
+  width:250px;
+  margin: 10px;
+  padding:5px 5px 20px 5px;
+}
+
+.grid-cell img { width:180px;
+  height:180px; }
+
+.grid-cell a { text-decoration: none; }
+
+.grid-cell h1, h2 { margin-left: 10px;
+  margin-right:10px;
+  font-family: optima;
+  font-weight:lighter; }
+
+.grid-cell h1 {
+  font-size:18px;
+}
+
+.grid-cell h2 {
+  font-size:12px;
+}
+
+.clearance {
+  color:red;
+  font-weight:bold;
+}
+
 .info-button
 { border-radius:3px;
 border:1px solid #D5D5D5;
@@ -440,36 +476,6 @@ font-size: 12px;
 padding:6px;
 margin-left:10px;
 margin-right:10px; }
-
-.grid-cell img { width:180px;
-  height:180px; }
-
-.grid-cell a { text-decoration: none; }
-
-.grid { margin-left: 100px;
-margin-right:100px;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;}
-
-.grid-cell { border-radius: 3px;
-border: 1px solid #D5D5D5;
-width:250px;
-margin: 10px;
-padding:5px 5px 20px 5px;
- }
-
- .grid-cell h1 { margin-left: 10px;
- margin-right:10px;
-font-size:18px;
-font-family: optima;
-font-weight:lighter; }
-
- .grid-cell h2 { margin-left: 10px;
- margin-right:10px;
-font-size:12px;
-font-family: optima;
-font-weight:lighter; }
 
 .detailcontainer { margin-left: 100px;
 margin-right:100px;
@@ -506,8 +512,3 @@ font-family:optima;
 font-weight:lighter;
 font-size:16px;
 color:#000000; }
-
-.clearance {
-  color:red;
-  font-weight:bold;
-}
