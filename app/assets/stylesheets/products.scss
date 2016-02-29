@@ -477,7 +477,8 @@ padding:6px;
 margin-left:10px;
 margin-right:10px; }
 
-.detailcontainer { margin-left: 100px;
+.detailcontainer {
+margin-left: 100px;
 margin-right:100px;
 display: flex;
 flex-direction: row;
@@ -486,29 +487,26 @@ flex-wrap: nowrap; }
 .detailimage { width: 800px; }
 .detailimage img { width: 800px; }
 
+.detaildescription {
+  color:#000000;
+  font-family:optima;
+  font-weight:lighter;
+}
+
 .detaildescription h1 {
 background-color:#F9C700;
-font-family:optima;
-font-weight:lighter;
 font-size:30px;
-color:#000000; }
+font-weight:lighter; }
 
 .detaildescription h2 {
 background-color:#AEFAED;
-font-family:optima;
-font-weight:lighter;
 font-size:20px;
-color:#000000; }
+font-weight:lighter; }
 
 .detaildescription h3 {
 background-color:#EEEEEE;
-font-family:optima;
-font-weight:lighter;
 font-size:20px;
-color:#000000; }
+font-weight:lighter; }
 
 .detaildescription p {
-font-family:optima;
-font-weight:lighter;
-font-size:16px;
-color:#000000; }
+font-size:16px; }
