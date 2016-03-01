@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'home#welcome'
-  get 'products/list' => 'products#list'
+  get 'products/' => 'products#list'
 
   get 'products/:id' => 'products#detail'
 
